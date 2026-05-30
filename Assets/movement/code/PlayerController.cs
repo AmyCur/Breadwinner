@@ -11,9 +11,11 @@ namespace Player
         float vInputRaw => Input.GetAxisRaw("Vertical");
 
         [SerializeField] bool canJump = true;
+        [SerializeField] bool canDash = true;
 
 
         bool shouldJump => canJump && Input.GetKeyDown(KeyCode.Space) && Grounded();
+        bool shouldDash => canDash && Input.GetKeyDown(KeyCode.LeftShift);
 
         [Header("Game Objects")]
         [SerializeField] GameObject groundChecker;
@@ -21,6 +23,7 @@ namespace Player
         [Header("Movement Parameters")]
         public float speed = 12f;
         public float jumpForce = 12f;
+        public float dashForce = 12f;
 
         Rigidbody2D rb;
 
@@ -48,10 +51,9 @@ namespace Player
             Debug.Log($"{canJump} && {Input.GetKeyDown(KeyCode.Space)} && {Grounded()}");
 
 
-            if (shouldJump)
-            {
-                JumpController.Jump();
-            }
+            if (shouldJump) JumpController.Jump();
+
+            if (shouldDash) DashController.Dash();
         }
 
         void Start()

@@ -5,6 +5,8 @@ namespace Player
     public static class Player
     {
         public static GameObject playerObject;
+        public static Transform playerTransform => playerObject.transform;
+        public static Vector3 playerPosition => playerTransform.position;
         public static PlayerController pc;
         public static Rigidbody2D rb;
 

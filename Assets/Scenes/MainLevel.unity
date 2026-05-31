@@ -162,7 +162,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 143accd6a6f88215fa5ab0b727433c8c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -364,11 +364,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 1.4
+  m_LinearDamping: 3
   m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 4
+  m_Material: {fileID: 6200000, guid: 143accd6a6f88215fa5ab0b727433c8c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -392,9 +392,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerController
   canJump: 1
+  canDash: 1
+  canMove: 1
   groundChecker: {fileID: 1239687490}
   speed: 12
-  jumpForce: 8
+  maxSpeed: 20
+  jumpForce: 20
+  dashForce: 12
 --- !u!1 &1212284920
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +501,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2a5aec58bb48ac8fe973467f2beb0e21, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

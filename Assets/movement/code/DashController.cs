@@ -7,9 +7,9 @@ namespace Player
     {
         public static void Dash()
         {
-            Vector2 mousePos = Player.playerObject.transform.distance().normalized;
+            Vector2 mousePos = Player.playerTransform.distance().normalized;
             Debug.Log(mousePos);
-            Player.rb.linearVelocity = new Vector2(mousePos.x - 0.5f, mousePos.y - 0.5f) * Player.pc.dashForce;
+            Player.rb.AddForce(new Vector2(Mathf.Sign(mousePos.x - 0.5f), Mathf.Sign(mousePos.y - 0.5f)) * Player.pc.dashForce);
 
         }
     }

@@ -12,16 +12,19 @@ namespace Player
 
         [SerializeField] bool canJump = true;
         [SerializeField] bool canDash = true;
+        [SerializeField] bool canMove = true;
 
 
         bool shouldJump => canJump && Input.GetKeyDown(KeyCode.Space) && Grounded();
         bool shouldDash => canDash && Input.GetKeyDown(KeyCode.LeftShift);
+        bool shouldMove => canMove && (hInputRaw != 0);
 
         [Header("Game Objects")]
         [SerializeField] GameObject groundChecker;
 
         [Header("Movement Parameters")]
         public float speed = 12f;
+        public float maxSpeed = 20f;
         public float jumpForce = 12f;
         public float dashForce = 12f;
 
@@ -43,7 +46,22 @@ namespace Player
 
         void FixedUpdate()
         {
-            rb.linearVelocity = new Vector2(hInput * speed, rb.linearVelocity.y);
+            Move();
+            ClampMaxMoveSpeed();
+        }
+
+        void ClampMaxMoveSpeed()
+        {
+            rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, -maxSpeed, maxSpeed), rb.linearVelocity.y);
+        }
+
+        void Move()
+        {
+            if (shouldMove)
+            {
+                rb.linearVelocity = new Vector2(hInput * speed, rb.linearVelocity.y);
+
+            }
         }
 
         void Update()

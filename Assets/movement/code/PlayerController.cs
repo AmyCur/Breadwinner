@@ -10,10 +10,9 @@ namespace Player
         float hInputRaw => Input.GetAxisRaw("Horizontal");
         float vInputRaw => Input.GetAxisRaw("Vertical");
 
-        [SerializeField] bool canJump = true;
-        [SerializeField] bool canDash = true;
-        [SerializeField] bool canMove = true;
-
+        public bool canJump = true;
+        public bool canDash = true;
+        public bool canMove = true;
 
         bool shouldJump => canJump && Input.GetKeyDown(KeyCode.Space) && Grounded();
         bool shouldDash => canDash && Input.GetKeyDown(KeyCode.LeftShift);

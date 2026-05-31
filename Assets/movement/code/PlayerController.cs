@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : Combat.Entities.EntityController
     {
 
         float hInput => Input.GetAxis("Horizontal");
@@ -37,7 +37,6 @@ namespace Player
             Collider2D[] groundCheckerTouching = Physics2D.OverlapBoxAll(groundCheckerPos, groundCheckerScale, 0);
             foreach (Collider2D col in groundCheckerTouching)
             {
-                Debug.Log(col.name);
                 if (col.isGround()) return true;
             }
             return false;
@@ -66,7 +65,6 @@ namespace Player
 
         void Update()
         {
-            Debug.Log($"{canJump} && {Input.GetKeyDown(KeyCode.Space)} && {Grounded()}");
 
 
             if (shouldJump) JumpController.Jump();

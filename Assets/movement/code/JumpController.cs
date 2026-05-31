@@ -6,7 +6,6 @@ namespace Player
     {
         public static bool isGround(this object obj)
         {
-            Debug.Log($"It is {obj is Collider2D}");
             if (obj is Collider2D) return (obj as Collider2D).CompareTag("Ground");
             return false;
         }

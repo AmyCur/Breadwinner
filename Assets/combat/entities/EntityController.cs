@@ -11,5 +11,12 @@ namespace Combat.Entities
         {
             health -= damage;
         }
+
+        protected virtual void Update()
+        {
+            if (health <= 0) Die();
+        }
+
+        public virtual void Die() { }
     }
 }

@@ -17,6 +17,7 @@ namespace Player
         bool shouldJump => canJump && Input.GetKeyDown(KeyCode.Space) && Grounded();
         bool shouldDash => canDash && Input.GetKeyDown(KeyCode.LeftShift);
         bool shouldMove => canMove && (hInputRaw != 0);
+        bool shouldIncreaseGravity => !Grounded() && GravityController.currentGravityRoutine == null && !JumpController.hasGrace;
 
         [Header("Game Objects")]
         [SerializeField] GameObject groundChecker;
@@ -25,11 +26,12 @@ namespace Player
         public float speed = 12f;
         public float maxSpeed = 20f;
         public float jumpForce = 12f;
+        public float jumpGraceTime = 0.2f;
         public float dashForce = 12f;
 
         Rigidbody2D rb;
 
-        bool Grounded()
+        public bool Grounded()
         {
             Vector2 groundCheckerPos = groundChecker.transform.position;
             Vector2 groundCheckerScale = groundChecker.transform.localScale;
@@ -42,10 +44,16 @@ namespace Player
         }
 
 
+
+
         void FixedUpdate()
         {
             Move();
             ClampMaxMoveSpeed();
+            if (shouldIncreaseGravity)
+            {
+                GravityController.currentGravityRoutine = StartCoroutine(GravityController.IncreaseGravity());
+            }
         }
 
         void ClampMaxMoveSpeed()
@@ -62,13 +70,15 @@ namespace Player
             }
         }
 
-        void Update()
+        protected override void Update()
         {
 
 
             if (shouldJump) JumpController.Jump();
 
             if (shouldDash) DashController.Dash();
+
+            base.Update();
         }
 
         void Start()

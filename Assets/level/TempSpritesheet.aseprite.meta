@@ -505,6 +505,69 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 284}
+  - name: Tileset_0_18
+    originalName: 
+    pivot: {x: 0.375, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 284
+      width: 8
+      height: 8
+    spriteID: e6f59a711b2847d649bab4001382f04c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 284}
+  - name: Tileset_0_19
+    originalName: 
+    pivot: {x: 0.375, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 284
+      width: 8
+      height: 8
+    spriteID: 1fd40099a6538a050a120ed0d8ec310b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 284}
+  - name: Tileset_0_20
+    originalName: 
+    pivot: {x: 0.375, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 284
+      width: 8
+      height: 8
+    spriteID: 446678e53831c77119a0279318b8c821
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 284}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
@@ -642,6 +705,24 @@ ScriptedImporter:
         y: 8
       name: Tileset_0_17
       spriteId: 359bbf5990af6c70ca47a5f437c6c00f
+    - tileId: 18
+      size:
+        x: 8
+        y: 8
+      name: Tileset_0_18
+      spriteId: e6f59a711b2847d649bab4001382f04c
+    - tileId: 19
+      size:
+        x: 8
+        y: 8
+      name: Tileset_0_19
+      spriteId: 1fd40099a6538a050a120ed0d8ec310b
+    - tileId: 20
+      size:
+        x: 8
+        y: 8
+      name: Tileset_0_20
+      spriteId: 446678e53831c77119a0279318b8c821
     guid: -1102077067
   platformSettings: []
   generatePhysicsShape: 0

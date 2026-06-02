@@ -364,7 +364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_12
+      name: Temp_Alt_TL
       rect:
         serializedVersion: 2
         x: 32
@@ -386,7 +386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_13
+      name: Temp_Alt_TC
       rect:
         serializedVersion: 2
         x: 40
@@ -408,7 +408,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_14
+      name: Temp_Alt_TR
       rect:
         serializedVersion: 2
         x: 48
@@ -540,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_20
+      name: Temp_Alt_CL
       rect:
         serializedVersion: 2
         x: 32
@@ -562,7 +562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_21
+      name: Temp_Alt_C
       rect:
         serializedVersion: 2
         x: 40
@@ -584,7 +584,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_22
+      name: Temp_Alt_CR
       rect:
         serializedVersion: 2
         x: 48
@@ -716,7 +716,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_28
+      name: Temp_Alt_BL
       rect:
         serializedVersion: 2
         x: 32
@@ -738,7 +738,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_29
+      name: Temp_Alt_CB
       rect:
         serializedVersion: 2
         x: 40
@@ -760,7 +760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_30
+      name: Temp_Alt_BR
       rect:
         serializedVersion: 2
         x: 48
@@ -1526,22 +1526,13 @@ TextureImporter:
       TempSpritesheet_0: -3374388882757023311
       TempSpritesheet_1: -1162680017
       TempSpritesheet_11: -781070860
-      TempSpritesheet_12: -299639044
-      TempSpritesheet_13: 1563052031
-      TempSpritesheet_14: 1964792864
       TempSpritesheet_15: 1471593315
       TempSpritesheet_17: -2114167120
       TempSpritesheet_19: 398768726
       TempSpritesheet_2: -1175471414
-      TempSpritesheet_20: -593891203
-      TempSpritesheet_21: 1867657276
-      TempSpritesheet_22: -1346636944
       TempSpritesheet_23: 1673358845
       TempSpritesheet_27: 595911627
-      TempSpritesheet_28: -276225688
-      TempSpritesheet_29: -218838573
       TempSpritesheet_3: -155867915
-      TempSpritesheet_30: -496683365
       TempSpritesheet_31: -1583568443
       TempSpritesheet_32: 399549350
       TempSpritesheet_33: 870059593
@@ -1579,6 +1570,15 @@ TextureImporter:
       TempSpritesheet_62: 1702302490
       TempSpritesheet_63: 1905181539
       TempSpritesheet_7: -1457029190
+      Temp_Alt_BL: -276225688
+      Temp_Alt_BR: -496683365
+      Temp_Alt_C: 1867657276
+      Temp_Alt_CB: -218838573
+      Temp_Alt_CL: -593891203
+      Temp_Alt_CR: -1346636944
+      Temp_Alt_TC: 1563052031
+      Temp_Alt_TL: -299639044
+      Temp_Alt_TR: 1964792864
       Temp_B: 1336897406
       Temp_BL: -945723976
       Temp_BR: -1127145442

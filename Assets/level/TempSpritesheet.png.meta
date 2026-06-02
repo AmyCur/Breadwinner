@@ -1068,7 +1068,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_44
+      name: Temp_TLB
       rect:
         serializedVersion: 2
         x: 32
@@ -1090,7 +1090,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_45
+      name: Temp_TLBTemp_TRB
       rect:
         serializedVersion: 2
         x: 40
@@ -1112,7 +1112,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_46
+      name: Temp_TB
       rect:
         serializedVersion: 2
         x: 48
@@ -1244,7 +1244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_52
+      name: Temp_LTR
       rect:
         serializedVersion: 2
         x: 32
@@ -1266,7 +1266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_53
+      name: Temp_LTRTemp_LBR
       rect:
         serializedVersion: 2
         x: 40
@@ -1288,7 +1288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempSpritesheet_54
+      name: Temp_LR
       rect:
         serializedVersion: 2
         x: 48
@@ -1547,18 +1547,12 @@ TextureImporter:
       TempSpritesheet_41: -1222472671
       TempSpritesheet_42: -1221043816
       TempSpritesheet_43: 1727068945
-      TempSpritesheet_44: -393984862
-      TempSpritesheet_45: -539776290
-      TempSpritesheet_46: 429904667
       TempSpritesheet_47: -79067433
       TempSpritesheet_48: 1683098333
       TempSpritesheet_49: -853439033
       TempSpritesheet_5: 1362648814
       TempSpritesheet_50: 801776438
       TempSpritesheet_51: -937152313
-      TempSpritesheet_52: -1420007937
-      TempSpritesheet_53: -1957672889
-      TempSpritesheet_54: 186580086
       TempSpritesheet_55: -2011716650
       TempSpritesheet_56: -110609683
       TempSpritesheet_57: 2086024254
@@ -1584,8 +1578,14 @@ TextureImporter:
       Temp_BR: -1127145442
       Temp_CL: 154776990
       Temp_CR: 1774752523
+      Temp_LR: 186580086
+      Temp_LTR: -1420007937
+      Temp_LTRTemp_LBR: -1957672889
       Temp_T: -1273180873
+      Temp_TB: 429904667
       Temp_TL: -147872347
+      Temp_TLB: -393984862
+      Temp_TLBTemp_TRB: -539776290
       Temp_TR: -460192086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

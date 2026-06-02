@@ -23,10 +23,17 @@ namespace Player
         [SerializeField] GameObject groundChecker;
 
         [Header("Movement Parameters")]
-        public float speed = 12f;
-        public float maxSpeed = 20f;
+        [Header("Jumping")]
         public float jumpForce = 12f;
         public float jumpGraceTime = 0.2f;
+        public float gravityIncreaseRate = 1.005f;
+        public float maxGravityScale = 15f;
+
+        [Header("Walking")]
+        public float speed = 12f;
+        public float maxSpeed = 20f;
+
+        [Header("Dashing")]
         public float dashForce = 12f;
 
         Rigidbody2D rb;
